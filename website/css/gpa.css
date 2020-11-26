@@ -1,0 +1,22 @@
+#form input[type="text"],
+#form input[type="number"],
+#form select {
+  padding: 8px;
+  display: block;
+  background: #fcfcfc;
+  border: none;
+  outline: none;
+  color: #464646;
+  font-size: 0.8125em;
+  box-shadow: inset 0px 0px 3px #999;
+}
+
+#form input[type="button"] {
+  padding: 7px 20px;
+  background-color: #D54F30 ;
+  color: #FFF;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Join us</title>
+	<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/joinus.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<body>
+	<div class="header-bg">
+		<div class="wrap">
+			<div class="h-bg">
+				<div class="total">
+					<div class="header">
+						<div class="header-bot" style="padding: 0 0 20px 0;">
+							<div class="logo">
+								<a href="../index.html" style="font-size: 50px; color: #000;">Computer<span
+										style="font-size: 25px; color: #d54f30;">Information</span></a>
+							</div>
+							<div class="search">
+								<input type="text" class="textbox" value="">
+								<button class="gray-button"><span>Search</span></button>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="menu">
+						<div class="top-nav">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="./computer.html">computer</a></li>
+								<li class="active"><a href="./joinus.html">join us</a></li>
+								<li><a href="./computegpa.html">computegpa</a></li>
+								<li><a href="#">More</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="banner-top">
+						<div class="header-bottom">
+							<div class="header_bottom_right_images">
+								<div class="content-wrapper">
+									<div class="content-top">
+										<div class="box_wrapper" style="margin: 0;">
+											<h1>Recruitment notice</h1>
+										</div>
+										<div>
+											<div>
+												<div class="contact-form">
+													<h3 style="font-size: 16px; color: #D54F30; padding: 5px 10px; line-height: 30px;">
+														&ensp;&ensp; We need to recruit teaching assistants. If you are interested, please contact
+														us by filling in the information below.</h3>
+													<form action="#" id="form"
+														style="padding: 10px 0 10px 30px; box-sizing: border-box; position: relative;">
+														<div>
+															<span><label>FULL NAME</label></span>
+															<span><input name="fullname" type="text" class="textbox"></span>
+														</div>
+														<div>
+															<span><label>STUDENT ID</label></span>
+															<span><input name="id" type="text" class="textbox"></span>
+														</div>
+														<div>
+															<span><label>GENDER</label></span>
+															<span><input name="gender" type="text" class="textbox"></span>
+														</div>
+														<div>
+															<span><label>GPA</label></span>
+															<span><input name="gpa" type="number" class="textbox" min="0" max="5"></span>
+														</div>
+														<div>
+															<span><label>SUBMISSION DATE</label></span>
+															<span><input name="date" type="date" value="2020-11-26" class="textbox"></span>
+														</div>
+														<div>
+															<span><label>COMMENTS</label></span>
+															<span><textarea name="comment" maxlength="150" style="resize: none;" rows="3"
+																	class="textbox"> </textarea></span>
+														</div>
+														<div>
+															<span><input type="submit" value="Submit" id="submit"></span>
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="header-para">
+								<div class="categories">
+									<div class="box-title">
+										<h1><span class="title-icon"></span><a href="">Branches</a></h1>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="news-list">
+									<ol>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+										<li><a href="#">This is News. This is News.</a></li>
+									</ol>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="footer-bottom">
+								<div class="copy">
+									<p>Copyright &copy; 2020.Liu YangYang All rights reserved.&middot; Contact: +86 13349732606</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('#submit').click(function (event) {
+			event.preventDefault();
+			for (var i = 0; i < $('#form .textbox').length; i++) {
+				if (!$($('#form .textbox')[i]).val()) {
+					alert('Please fill in complete the form.');
+					return;
+				}
+			}
+			alert('Thank you for your fill in we will contact you as soon as possible.');
+		})
+	</script>
+</body>
+
+</html>
